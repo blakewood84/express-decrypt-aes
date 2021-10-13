@@ -23,11 +23,11 @@ app.post('/decrypt', async (req, res) => {
     console.log(originalText) // original message
     
     res.send({
-        data: originText
+        data: originalText
     })
     
 })
 
-app.listen(config.port, () => {
-    console.log(`example app listening at http://localhost:${config.port}`)
+app.listen(8081, () => {
+    console.log(`example app listening at http://localhost:8081`)
 })
